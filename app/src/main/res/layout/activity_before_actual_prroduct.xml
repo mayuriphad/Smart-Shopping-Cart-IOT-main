@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <!-- WebView for displaying the website -->
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- Buttons below the WebView -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <!-- First Button (Add Product) and Icon -->
+        <AbsoluteLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/addProduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorAccent"
+                android:fontFamily="@font/font_poppins"
+                android:text="Add Product"
+                android:textColor="@color/colorOnPrimary"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/imageAddProduct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="25dp"
+                android:layout_x="323dp"
+                android:layout_y="6dp"
+                android:backgroundTint="@color/colorAccent"
+                android:contentDescription="Add Product Icon"
+                android:src="@drawable/icon_add" />
+        </AbsoluteLayout>
+
+        <!-- Second Button (Go to List) and Icon -->
+        <AbsoluteLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/goToList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorAccent"
+                android:fontFamily="@font/font_poppins"
+                android:text="Go to List"
+                android:textColor="@color/colorOnPrimary"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/imageGoToList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20dp"
+                android:layout_x="326dp"
+                android:layout_y="5dp"
+                android:backgroundTint="@color/colorAccent"
+                android:contentDescription="Go to List Icon"
+                android:src="@drawable/baseline_arrow_forward_24" />
+        </AbsoluteLayout>
+    </LinearLayout>
+</LinearLayout>

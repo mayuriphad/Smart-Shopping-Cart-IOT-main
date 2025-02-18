@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".ActualCart">
+
+    <!-- Title TextView -->
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/font_poppins"
+        android:text="Your Products"
+        android:textColor="@color/colorText"
+        android:textSize="29sp"
+        android:textStyle="bold" />
+
+    <!-- RecyclerView for displaying products -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewProducts"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1" />
+
+    <!-- TextView for showing total amount -->
+
+    <TextView
+        android:id="@+id/textViewTotalAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/font_poppins"
+        android:text="Total Amount: ₹0"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewTotalWeight2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:fontFamily="@font/font_poppins"
+        android:text="Total Weight: 0"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <AbsoluteLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!-- Button for UPI payment -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonUPI"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/colorAccent"
+            android:fontFamily="@font/font_poppins"
+            android:text="PAY USING ANY UPI"
+            android:textColor="@color/colorOnPrimary"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:cornerRadius="8dp" />
+
+        <ImageButton
+            android:id="@+id/imageRupee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_x="316dp"
+            android:layout_y="6dp"
+            android:backgroundTint="@color/colorAccent"
+            android:src="@drawable/baseline_done_24" />
+    </AbsoluteLayout>
+    <AbsoluteLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!-- Button to scan more products -->
+
+        <!-- ImageButton for scanning products -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonAddProductManually"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_x="0dp"
+            android:layout_y="0dp"
+            android:fontFamily="@font/font_poppins"
+            android:text="ADD PRODUCT MANUALLY"
+            android:textColor="@color/colorOnPrimary"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:backgroundTint="@color/colorAccent"
+            app:cornerRadius="8dp" />
+
+        <ImageButton
+            android:id="@+id/imageAddProductManually"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_x="324dp"
+            android:layout_y="4dp"
+            android:backgroundTint="@color/colorAccent"
+            android:src="@drawable/icon_add" />
+    </AbsoluteLayout>
+
+
+</LinearLayout>

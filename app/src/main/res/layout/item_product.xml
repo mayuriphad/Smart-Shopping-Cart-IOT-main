@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="15dp"
+    android:background="@drawable/rounded_edittext_background"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/textViewProductName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fontFamily="@font/font_poppins"
+        android:text="dummy product"
+        android:textColor="@color/colorOnPrimary"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewProductPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/font_poppins"
+        android:text="500"
+        android:textColor="@color/colorOnPrimary"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/buttonRemove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorDarkGrey"
+        android:src="@drawable/baseline_remove_circle_outline_24" />
+
+</LinearLayout>

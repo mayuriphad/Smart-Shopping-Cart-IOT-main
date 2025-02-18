@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Menu">
+
+
+    <AbsoluteLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_x="55dp"
+            android:layout_y="320dp"
+            android:fontFamily="@font/font_poppins"
+            android:text="@string/message"
+            android:textColor="@color/colorText"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_x="103dp"
+            android:layout_y="102dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_logo" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonScanProducts"
+            android:layout_width="386dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="16dp"
+            android:layout_x="15dp"
+            android:layout_y="580dp"
+            android:fontFamily="@font/font_poppins"
+            android:text="SCAN WITH PHONE"
+            android:textColor="@color/colorOnPrimary"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:backgroundTint="@color/colorAccent"
+            app:cornerRadius="8dp" />
+
+        <ImageButton
+            android:id="@+id/imageScanProducts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonLogin"
+            android:layout_x="324dp"
+            android:layout_y="581dp"
+            android:backgroundTint="@color/colorAccent"
+            app:srcCompat="@drawable/baseline_qr_code_scanner_24" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonCartConnect"
+            android:layout_width="386dp"
+            android:layout_height="70dp"
+            android:layout_x="13dp"
+            android:layout_y="443dp"
+            android:fontFamily="@font/font_poppins"
+            android:text="CONNECT YOUR CART"
+            android:textColor="@color/colorOnPrimary"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:backgroundTint="@color/colorAccent"
+            app:cornerRadius="8dp" />
+
+        <ImageButton
+            android:id="@+id/imageCartConnect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonLogin"
+            android:layout_x="323dp"
+            android:layout_y="446dp"
+            android:backgroundTint="@color/colorAccent"
+            app:srcCompat="@drawable/baseline_add_circle_outline_24" />
+
+        <!--        <com.google.android.material.button.MaterialButton-->
+        <!--            android:id="@+id/buttonStartShopping"-->
+        <!--            android:layout_width="269dp"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_x="85dp"-->
+        <!--            android:layout_y="200dp"-->
+        <!--            android:fontFamily="@font/font_poppins"-->
+        <!--            android:text="START SHOPPING"-->
+        <!--            android:textColor="@color/colorOnPrimary"-->
+        <!--            android:textStyle="bold"-->
+        <!--            app:backgroundTint="@color/colorAccent"-->
+        <!--            app:cornerRadius="8dp" />-->
+
+
+        <!--        <ImageButton-->
+        <!--            android:id="@+id/imageStartShopping"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_below="@id/buttonLogin"-->
+        <!--            android:layout_x="301dp"-->
+        <!--            android:layout_y="203dp"-->
+        <!--            android:backgroundTint="@color/colorAccent"-->
+        <!--            app:srcCompat="@drawable/outline_shopping_cart_checkout_24" />-->
+
+
+    </AbsoluteLayout>
+</LinearLayout>

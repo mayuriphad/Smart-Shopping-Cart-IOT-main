@@ -1,0 +1,70 @@
+[versions]
+agp = "8.5.1"
+barcodeScanning = "17.0.3"
+barcodeScanningVersion = "17.0.0"
+converterGson = "2.9.0"
+core = "3.4.1"
+devEasyupipayment = "3.0.3"
+easyupipayment = "2.0"
+easyupipaymentVersion = "LATEST_VERSION_HERE"
+firebaseDatabaseVersion = "20.0.3"
+googleBarcodeScanning = "18.1.0"
+gson = "2.10.1"
+javaWebsocket = "1.5.2"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+appcompat = "1.7.0"
+material = "1.12.0"
+activity = "1.9.1"
+constraintlayout = "2.1.4"
+googleGmsGoogleServices = "4.4.2"
+firebaseAuth = "23.0.0"
+materialVersion = "1.9.0"
+playServicesAuth = "21.2.0"
+navigationFragment = "2.7.7"
+navigationUi = "2.7.7"
+playServicesWallet = "19.4.0"
+recyclerview = "1.3.2"
+firebaseDatabase = "21.0.0"
+upisdk = "1.6.21"
+zxingAndroidEmbedded = "4.3.0"
+visionCommon = "17.3.0"
+
+[libraries]
+barcode-scanning = { module = "com.google.mlkit:barcode-scanning", version.ref = "visionCommon" }
+barcode-scanning-v1700 = { module = "com.google.mlkit:barcode-scanning", version.ref = "barcodeScanningVersion" }
+barcode-scanning-v1703 = { module = "com.google.mlkit:barcode-scanning", version.ref = "barcodeScanning" }
+barcode-scanning-v1810 = { module = "com.google.mlkit:barcode-scanning", version.ref = "googleBarcodeScanning" }
+converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "converterGson" }
+core = { module = "com.google.zxing:core", version.ref = "core" }
+dev-easyupipayment = { module = "dev.shreyaspatil.EasyUpiPayment:EasyUpiPayment", version.ref = "easyupipaymentVersion" }
+easyupipayment = { module = "com.shreyaspatil:EasyUpiPayment", version.ref = "easyupipayment" }
+easyupipayment-v303 = { module = "dev.shreyaspatil.EasyUpiPayment:EasyUpiPayment", version.ref = "devEasyupipayment" }
+firebase-database-v2003 = { module = "com.google.firebase:firebase-database", version.ref = "firebaseDatabaseVersion" }
+gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
+java-websocket = { module = "org.java-websocket:Java-WebSocket", version.ref = "javaWebsocket" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+firebase-auth = { group = "com.google.firebase", name = "firebase-auth", version.ref = "firebaseAuth" }
+material-v190 = { module = "com.google.android.material:material", version.ref = "materialVersion" }
+play-services-auth = { module = "com.google.android.gms:play-services-auth", version.ref = "playServicesAuth" }
+navigation-fragment = { group = "androidx.navigation", name = "navigation-fragment", version.ref = "navigationFragment" }
+navigation-ui = { group = "androidx.navigation", name = "navigation-ui", version.ref = "navigationUi" }
+play-services-wallet = { module = "com.google.android.gms:play-services-wallet", version.ref = "playServicesWallet" }
+recyclerview = { module = "androidx.recyclerview:recyclerview", version.ref = "recyclerview" }
+retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "converterGson" }
+firebase-database = { group = "com.google.firebase", name = "firebase-database", version.ref = "firebaseDatabase" }
+upisdk = { module = "in.payu:upisdk", version.ref = "upisdk" }
+zxing-android-embedded = { module = "com.journeyapps:zxing-android-embedded", version.ref = "zxingAndroidEmbedded" }
+vision-common = { group = "com.google.mlkit", name = "vision-common", version.ref = "visionCommon" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+google-gms-google-services = { id = "com.google.gms.google-services", version.ref = "googleGmsGoogleServices" }
+

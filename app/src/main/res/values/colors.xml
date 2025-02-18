@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#31326f</color>
+    <color name="colorPrimaryVariant">#1d2f4b</color>
+    <color name="colorOnPrimary">#ffffff</color>
+    <color name="colorSecondary">#AC2C2C</color>
+    <color name="colorOnSecondary">#ffffff</color>
+    <color name="colorBackground">#091629</color>
+    <color name="colorText">#d8dfe9</color>
+    <color name="colorPrimaryDark">#1c2b2d</color>
+    <color name="colorAccent">#205ccf</color>
+    <color name="colorAccentText">#3a75e4</color>
+    <color name="colorPrimaryHover">#1b51b6</color>
+    <color name="colorPrimaryLight">#1d2f4b</color>
+    <color name="colorGrey">#eee</color>
+    <color name="colorGreyOutline">#363b46</color>
+    <color name="colorGreyOutlineFocus">#474d5c</color>
+    <color name="colorDarkGrey">#222831</color>
+    <color name="colorBluishBlack">#15143a</color>
+    <color name="colorGoogleButton">#4285F4</color>
+    <color name="colorGreyDark">#B9E6E5E5</color>
+    <color name="colorShadow">#B3B3B3</color>
+</resources>
